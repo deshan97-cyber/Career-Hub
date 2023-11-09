@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Hub</title>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career hub</title>
+    <link rel="stylesheet" href="./skillprofile.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b7cae9d377.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="container nav_container">
+            <a href="homepage.html">
+                <img src="./imgs/logo_careerhub.png" width="120px" height="120px" id="logo" alt="logo image" style="margin-left: 1px ;"/>
+            </a>
+            <div class="nav_menu">
+                <a href="homepage.html#jobsearch">Job Search</a>
+                <a href="homepage.html#advancedjobsearch">Advance Job Search</a>
+                <a href="./career_advice.html">Career Advice</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Profile
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./sign_up.html">Sign in</a>
+                        <a href="./sign_up.html">Register</a>
+                        <a href="./skill_profile.html">Skill Profile </a>
+                        <a href="./sign_up.html">Logout </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav_btn" id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button class="nav_btn" id="close-menu-btn"><i class="fas fa-times"></i></button>
+
+    </nav>
+
+    <!-- header section -->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Add Your Skills & Manage a Skill Profile . </h1>
+                <p>
+                    Help employers find you by showcasing all of your skills. Skills don't die; only people do. Your
+                    greatest asset is the way you think. Not your skills, resources or the position you occupy. Because
+                    with the right mindset, you can turn any situation into greater success.
+
+                </p>
+
+                <a href="#jobsearch" class="btn btn-primary">Get Started</a>
+
+
+
+            </div>
+            <div class="header_right">
+                <div class="header_right_image">
+                    <img src="./imgs/5242374.jpg">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- skill form -->
+
+    <section class="skill_profile">
+
+        <div class="container skill_container">
+            <div class="skill">
+                <h2> Skill Profile</h2>
+                <h4> Preferred classification</h4>
+                <input type="text" class="pefered" id='preferskill' placeholder="Enter your skills">
+                <button class="add_skill" type="button" onclick="segetInputValue();">Add Skill</button>
+
+
+                <h4> Sub classification</h4>
+                
+                <input type="text" class="sub" id='subskill' placeholder="Enter your skills">
+                <button class="add_skill" type="button" onclick="getInputValue2();">Add Skill</button>
+
+<!-- need  -->
+            </div>
+
+            <div class="saved_skills">
+
+                <h4>Skills You Got!</h4>
+
+                <button class="skill_btn" id="output" onclick="showDiv()"></button>
+
+                <button class="sub_skillbtn" id="output2" onclick="showDiv()"></button>
+
+                <!-- add js to retrive data -->
+                <script>
+                    function getInputValue() {
+                        let inputValue = document.getElementById("preferskill").value;
+                        document.getElementById("output").innerHTML = inputValue;
+
+                    }
+                </script>
+
+
+                <script>
+                    function getInputValue2() {
+                        let inputValue2 = document.getElementById("subskill").value;
+                        document.getElementById("output2").innerHTML = inputValue2;
+
+                    }
+                </script>
+
+                <div id="savebtn" class="savebtn" style="display: none;">
+                    <a href="./homepage.html" class="btn_add" onclick="savealert()">Save</a>        
+                    <a href="./homepage.html" class="btn_remove" onclick="removealert()">Remove</a>
+
+                </div>
+                <!-- open buttons when clicking skills -->
+                <script>
+                    function showDiv() {
+                        document.getElementById('savebtn').style.display = "block";
+                    }
+                </script>
+
+    
+              <!-- add remove alert -->
+                <script>
+                    function savealert() {
+                        alert("Saved Succesfully!");
+                    }
+
+                </script>
+
+                <script>
+                    function removealert(){
+                        alert("Remove Succesfully!");
+                    }
+                </script>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>Career Hub</h4>
+                </a>
+                <p>CareerHub is a cutting-edge job-finding platform that seeks to revolutionise how people connect with
+                    their ideal employment. CareerHub was developed to assist with the issues encountered by both
+                    businesses and job seekers.</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#jobsearch">Job Search</a></li>
+                    <li><a href="homepage.html#advancedjobsearch">Advnced Job Search</a></li>
+                    <li><a href="./career_advice.html">Career Advice</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Tearms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+61 451 561 707</p>
+                    <p>helpatcareerhub@gmail.com</p>
+                </div>
+
+                <ul class="footer_social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; Career Hub</small>
+        </div>
+
+    </footer>
+    <script>
+        //nav button show/hide
+
+        const menu = document.querySelector(".nav_menu");
+        const menuBtn = document.querySelector("#open-menu-btn");
+        const closeBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = "flex";
+            closeBtn.style.display = "inline-block";
+            menuBtn.style.display = "none";
+        })
+
+
+        //close nav menu
+
+        const closeNav = () => {
+            menu.style.display = "none";
+            closeBtn.style.display = "none";
+            menuBtn.style.display = "inline-block";
+        }
+
+        closeBtn.addEventListener("click", closeNav)
+
+
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100)
+        });
+
+    </script>
+
+
+
+
+    <!-- JS Connecting -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

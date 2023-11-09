@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career hub</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b7cae9d377.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="container nav_container">
+            <a href="homepage.html">
+                <img src="./imgs/logo_careerhub.png" width="120px" height="120px" id="logo" alt="logo image" style="margin-left: 1px ;"/>
+            </a>
+            <div class="nav_menu">
+                <a  href="#jobsearch">Job Search</a>
+                <a href="#advancedjobsearch">Advance Job Search</a>
+                <a href="./career_advice.html">Career Advice</a>
+                <a href="./contact_us.html">Contact Us </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Profile
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./sign_up.html">Sign in</a>
+                        <a href="./sign_up.html">Register</a>
+                        <a href="./skill_profile.html">Skill Profile </a>
+                        <!-- <a href="./my_account.html">My Account </a> -->
+                        
+                        <a href="./sign_up.html">Logout </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav_btn" id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button class="nav_btn" id="close-menu-btn"><i class="fas fa-times"></i></button>
+
+
+    </nav>
+
+    <!-- header section -->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Your Dream Job is waiting. </h1>
+                <p>
+                    Finding a job that fits your talents in the evolving and competitive job market can be a challenging
+                    endeavour. CareerHub is a cutting-edge job-finding platform that seeks to revolutionise how people
+                    connect with their ideal employment. CareerHub was developed to assist with the issues encountered
+                    by both businesses and job seekers.
+
+                </p>
+
+                <a href="#jobsearch" class="btn btn-primary">Find a Job</a>
+                <a href="#jobsearch" class="btn btn-primary">Find a Candidate</a>
+
+
+            </div>
+            <div class="header_right">
+                <div class="header_right_image">
+                    <img src="./imgs/header.jpg">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--Job search -->
+
+    <section id="jobsearch" class="jobsearch">
+        <div class="container jobsearch_container">
+
+            <div class="jobsearch_description">
+                <h1>Search Your Job Here.</h1>
+                <!-- job role inpute -->
+                <input type="text" class="jobrole" id='jobrole' name="Job Role" placeholder="Job Role">
+
+                <!-- Category -->
+
+                <select name="Category" class="category" id="category">
+                    <option value="fulltime">Full Time</option>
+                    <option value="parttime">Part Time</option>
+                    <option value="Remote">Remote</option>
+                    <option value="onsite">On-Site</option>
+
+
+                </select>
+
+                <!-- Location input -->
+                <input type="text" class='location' id="location" name="Location" placeholder="Location">
+                <button id="searchbtn" onclick="showjobDiv()" class="btn_search">Search</button>
+
+            </div>
+
+        </div>
+        <!-- job shows -->
+
+
+        <div id="jobfield" class="container job-cards_container">
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Drug & Alcohol Testing Technician</h3>
+                    <h4>The Drug Detection Agency, Botany</h4>
+                    <p>
+                        Brighton-Le-Sands, Sydney NSW
+                        Pathology (Healthcare & Medical)
+                    <ul>
+                        <li>&#x2022; Flexible working hours/days</li>
+                        <li>&#x2022; Job Stability</li>
+                        <li>&#x2022; Great team environment</li>
+
+                    </ul>
+
+                    Our Botany office is expanding and is searching for reliable and professional team members to
+                    join the Botany Team as a casual testing technician.
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Mid Level Interior Designer</h3>
+                    <h4>Paul Kelly Design</h4>
+                    <p>Surry Hills, Sydney NSW
+                        $70,000 – $90,000 per year
+                        Interior Design (Design & Architecture)
+
+                    <ul>
+                        <li>&#x2022; Great Office Environment with Amazing projects!</li>
+                        <li>&#x2022; Fast Pace live and local projects.</li>
+                        <li>&#x2022; Work with one of the industries best hospitality design firms</li>
+                    </ul>
+                    Great opportunity to be involved in some of the top projects in the hospitality industry at the
+                    moment. If you love what you do, then we want you!
+                    </p>
+
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+
+                </div>
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Assistant Accountant</h3>
+                    <h4>The Academy Brand</h4>
+                    <p>Rosebery, Sydney NSW
+                        $65,000 – $80,000 per year
+                        Assistant Accountants (Accounting)
+
+                    <ul>
+                        <li>&#x2022; As a business we support the following initiatives</li>
+                        <li>&#x2022; Sporting Chance Cancer Foundation - offers critical support to Kids with cancer.
+                        </li>
+                        <li>&#x2022; Pass It On Clothing Co - Provides quality clothing to the homeless.</li>
+                    </ul>
+
+                    Assistant Accountant will providing support to the Finance manager encompass a broad range of
+                    accounts
+                    payable, receivable payroll and other duties.
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+            </article>
+        </div>
+        <!-- when click job search button, then popup job field screen -->
+        <script>
+            function showjobDiv() {
+                document.getElementById('jobfield').style.display = "grid";
+            }
+        </script>
+
+        <!-- when click job search button, then popup job field screen -->
+        <script>
+            function showjoDiv() {
+                document.getElementById('bot').style.display = "block";
+            }
+        </script>
+
+
+
+    </section>
+
+
+
+    <!--Advanced Job search -->
+
+    <section id="advancedjobsearch" class="advancedjobsearch">
+        <h1>Get a Right Job for Your Skills.</h1>
+        <div class="container advanced_jobsearch_container">
+
+            <div class="advanced_jobsearch_description">
+
+                <!-- job title input -->
+                <input type="text" class="ad_jobtitle" id='ad_jobrole' name="Job Role" placeholder="Job Title">
+
+                <!-- Location input -->
+
+                <input type="text" class='ad_location' id="location" name="Location" placeholder="Location">
+
+
+                <!-- skills -->
+
+                <select name="skills" class="ad_category" id="category">
+                    <option value="" disabled selected hidden>Choose your Skill</option>
+                    <option>Analytical Thinking</option>
+                    <option>Graphics Design</option>
+                    <option>Communication skills</option>
+                    <option>Team Work</option>
+                    <option>Logical thinking</option>
+                    <option>Hard working</option>
+                    <option>Excel</option>
+                    <option>IT knowledge</option>
+
+                </select>
+                <button id="searchbtn" onclick="showadvancejobDiv()" class="btn_search">Search</button>
+
+                <div class="search_filter">
+
+                    <a href="#jobcard1" onclick="showjobcard()" class="filter_btn"><i class="fas fa-filter"></i>Most Popular</a>
+                    <a href="#jobcard2" class="filter_btn"><i class="fas fa-filter"></i>Recent</a>
+                    <a href="#jobcard3" class="filter_btn"><i class="fas fa-filter"></i>Most Relevant</a>
+
+            
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+         <!-- job shows -->
+
+
+         <div id="advancedjobfield" class="container job-cards_container">
+
+            <article id="job_article" class="jobcard">
+                <div class="job_info">
+                    <h3>Drug & Alcohol Testing Technician</h3>
+                    <h4>The Drug Detection Agency, Botany</h4>
+                    <p>
+                        Brighton-Le-Sands, Sydney NSW
+                        Pathology (Healthcare & Medical)
+                    <ul>
+                        <li>&#x2022; Flexible working hours/days</li>
+                        <li>&#x2022; Job Stability</li>
+                        <li>&#x2022; Great team environment</li>
+
+                    </ul>
+
+                    Our Botany office is expanding and is searching for reliable and professional team members to
+                    join the Botany Team as a casual testing technician.
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Mid Level Interior Designer</h3>
+                    <h4>Paul Kelly Design</h4>
+                    <p>Surry Hills, Sydney NSW
+                        $70,000 – $90,000 per year
+                        Interior Design (Design & Architecture)
+
+                    <ul>
+                        <li>&#x2022; Great Office Environment with Amazing projects!</li>
+                        <li>&#x2022; Fast Pace live and local projects.</li>
+                        <li>&#x2022; Work with one of the industries best hospitality design firms</li>
+                    </ul>
+                    Great opportunity to be involved in some of the top projects in the hospitality industry at the
+                    moment. If you love what you do, then we want you!
+                    </p>
+
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+
+                </div>
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Assistant Accountant</h3>
+                    <h4>The Academy Brand</h4>
+                    <p>Rosebery, Sydney NSW
+                        $65,000 – $80,000 per year
+                        Assistant Accountants (Accounting)
+
+                    <ul>
+                        <li>&#x2022; As a business we support the following initiatives</li>
+                        <li>&#x2022; Sporting Chance Cancer Foundation - offers critical support to Kids with
+                            cancer.</li>
+                        <li>&#x2022; Pass It On Clothing Co - Provides quality clothing to the homeless.</li>
+                    </ul>
+
+                    Assistant Accountant will providing support to the Finance manager encompass a broad range of
+                    accounts
+                    payable, receivable payroll and other duties.
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Junior Software Developer</h3>
+                    <h4>Autop</h4>
+                    <p>Milton, Brisbane QLD
+                        $35 – $50 per hour
+                        Developers/Programmers (Information & Communication Technology)
+
+                    <ul>
+                        <li>&#x2022; Competitive hourly rate of $31.25, complemented by superannuation.</li>
+                        <li>&#x2022; Voted Brisbane's best call centre!</li>
+                        <li>&#x2022; Free lunch, excellent coffee, work life balance with every 2nd Friday off</li>
+                    </ul>
+
+                    Voted Brisbane's best call centre! Well above award pay, free lunch and more, come see what we are all about!
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+            </article>
+
+            <article class="jobcard">
+                <div class="job_info">
+                    <h3>Graduate IT Support Technician</h3>
+                    <h4>TAG</h4>
+                    <p>Stanmore, Sydney NSW
+                        $55,000 – $70,000 per year
+                        Help Desk & IT Support (Information & Communication Technology)
+
+                    <ul>
+                        <li>&#x2022; Funky high-tech office in a great Inner West location</li>
+                        <li>&#x2022; Permanent Full Time opportunity with an immediate start</li>
+                        <li>&#x2022; Friendly & supportive team environment</li>
+                    </ul>
+
+                    TAG is seeking an experienced and highly motivated IT Support Technician who possesses strong communication skills to join our IT support team.
+                    </p>
+                    <a href="#askcrew" id="askcrewjob" onclick="showjoDiv()" class="btn btn-primary">Ask-Crew</a>
+
+                </div>
+            </article>
+        </div>
+        <!-- when click job search button, then popup job field screen -->
+        <script>
+            function showadvancejobDiv() {
+                document.getElementById('advancedjobfield').style.display = "grid";
+            }
+        </script>
+
+        <!-- when click job search button, then popup job field screen -->
+        <script>
+            function showjoDiv() {
+                document.getElementById('bot').style.display = "block";
+            }
+        </script>
+
+        <!-- ask crew -->
+        <div id="askcrew" class="container help_container">
+            <div class="help">
+                <h2>Want help?</h2>
+                <p> Use our 'ASK-CREW" Option to find a most suitable job for you.</p>
+                <button id="askcrew" onclick="showDiv()" class="btn btn-primary">Ask - Crew</button>
+            </div>
+        </div>
+
+        <section id="bot" class="msger">
+
+
+            <main class="msger-chat">
+                <div id="bot" class="msg left-msg">
+                    <div class="msg-img" style="background-image: url(./imgs/bot.png)"></div>
+
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <div class="msg-info-name">CREW</div>
+                            <div class="msg-info-time">12:45</div>
+                        </div>
+
+                        <div class="msg-text">
+                            Hi, welcome to Career-Hub! How can I help you today.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="msg right-msg">
+                    <div class="msg-img" style="background-image: url(./imgs/person.png)"></div>
+
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <!-- <div class="msg-info-name">Sajad</div>
+                            <div class="msg-info-time">12:46</div> -->
+                        </div>
+
+                        <div class="msg-text">
+                            <!-- You can change your name in JS section! -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <form class="msger-inputarea">
+                <input type="text" class="msger-input" placeholder="Enter your message...">
+                <button type="submit" class="msger-send-btn">Send</button>
+            </form>
+        </section>
+
+        <!-- when click ask crew button, then popup messenger screen -->
+        <script>
+            function showDiv() {
+                document.getElementById('bot').style.display = "block";
+            }
+        </script>
+
+
+
+
+        <script>
+
+            const msgerForm = get(".msger-inputarea");
+            const msgerInput = get(".msger-input");
+            const msgerChat = get(".msger-chat");
+
+            const BOT_MSGS = [
+                "Hi, how are you?",
+                "We can guide you how to be professional in your job interview",
+                "I like to play games... But I don't know how to play!",
+                "Sorry if my answers are not relevant. :))",
+                "I feel sleepy! :("];
+
+
+            // Icons made by Freepik from www.flaticon.com
+            const BOT_IMG = "./imgs/bot.png";
+            const PERSON_IMG = "./imgs/person.png";
+            const BOT_NAME = "CREW";
+            const PERSON_NAME = "Me";
+
+            msgerForm.addEventListener("submit", event => {
+                event.preventDefault();
+
+                const msgText = msgerInput.value;
+                if (!msgText) return;
+
+                appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+                msgerInput.value = "";
+
+                botResponse();
+            });
+
+            function appendMessage(name, img, side, text) {
+                //   Simple solution for small apps
+                const msgHTML = `
+    <div class="msg ${side}-msg">
+      <div class="msg-img" style="background-image: url(${img})"></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">${name}</div>
+          <div class="msg-info-time">${formatDate(new Date())}</div>
+        </div>
+
+        <div class="msg-text">${text}</div>
+      </div>
+    </div>
+  `;
+
+                msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+                msgerChat.scrollTop += 500;
+            }
+
+            function botResponse() {
+                const r = random(0, BOT_MSGS.length - 1);
+                const msgText = BOT_MSGS[r];
+                const delay = msgText.split(" ").length * 100;
+
+                setTimeout(() => {
+                    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+                }, delay);
+            }
+
+            // Utils
+            function get(selector, root = document) {
+                return root.querySelector(selector);
+            }
+
+            function formatDate(date) {
+                const h = "0" + date.getHours();
+                const m = "0" + date.getMinutes();
+
+                return `${h.slice(-2)}:${m.slice(-2)}`;
+            }
+
+            function random(min, max) {
+                return Math.floor(Math.random() * (max - min) + min);
+            }
+
+        </script>
+
+    </section>
+
+    <!-- Find your next employer -->
+    <section class="employers">
+        <h1>Find Your Next Employer.</h1>
+        <div class="container employer_container">
+
+            <article class="employer">
+                <div class="employer_image">
+                    <img src="./imgs/lenowo.png">
+                </div>
+                <div class="employer_info">
+                    <h4>Lenovo</h4>
+                    <p>20 Jobs</p>
+                    <a href="./find_,more.html" id="askcrew" onclick="showDiv()" class="btn-ask">Find more...</a>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Ask - Crew</a>
+
+                </div>
+            </article>
+
+            <article class="employer">
+                <div class="employer_image">
+                    <img src="./imgs/sheraton.png">
+                </div>
+                <div class="employer_info">
+                    <h4>Sheraton</h4>
+                    <p>10 Jobs</p>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Find more...</a>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Ask - Crew</a>
+
+                </div>
+            </article>
+
+            <article class="employer">
+                <div class="employer_image">
+                    <img src="./imgs/Iress.png">
+                </div>
+                <div class="employer_info">
+                    <h4>IRESS</h4>
+                    <p>20 Jobs</p>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Find more...</a>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Ask - Crew</a>
+
+                </div>
+            </article>
+
+            <article class="employer">
+                <div class="employer_image">
+                    <img src="./imgs/cancer.png">
+                </div>
+                <div class="employer_info">
+                    <h4>Cancer Council</h4>
+                    <p>5 Jobs</p>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Find more...</a>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Ask - Crew</a>
+
+                </div>
+            </article>
+
+            <article class="employer">
+                <div class="employer_image">
+                    <img src="./imgs/geine.png">
+                </div>
+                <div class="employer_info">
+                    <h4>Genie Solutions</h4>
+                    <p>20 Jobs</p>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Find more...</a>
+                    <a href="#askcrew" id="askcrew" onclick="showDiv()" class="btn-ask">Ask - Crew</a>
+
+                </div>
+            </article>
+
+            <a href="#jobsearch" class="btn_seemore">See More >>></a>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>Career Hub</h4>
+                </a>
+                <p>CareerHub is a cutting-edge job-finding platform that seeks to revolutionise how people connect with
+                    their ideal employment. CareerHub was developed to assist with the issues encountered by both
+                    businesses and job seekers.</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#jobsearch">Job Search</a></li>
+                    <li><a href="#advancedjobsearch">Advnced Job Search</a></li>
+                    <li><a href="./career_advice.html">Career Advice</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Tearms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+61 451 561 707</p>
+                    <p>helpatcareerhub@gmail.com</p>
+                </div>
+
+                <ul class="footer_social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; Career Hub</small>
+        </div>
+
+    </footer>
+
+    <script>
+        //nav button show/hide
+
+        const menu = document.querySelector(".nav_menu");
+        const menuBtn = document.querySelector("#open-menu-btn");
+        const closeBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = "flex";
+            closeBtn.style.display = "inline-block";
+            menuBtn.style.display = "none";
+        })
+
+
+        //close nav menu
+
+        const closeNav = () => {
+            menu.style.display = "none";
+            closeBtn.style.display = "none";
+            menuBtn.style.display = "inline-block";
+        }
+
+        closeBtn.addEventListener("click", closeNav)
+
+
+    </script>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100)
+        });
+
+    </script>
+
+
+
+
+
+
+    <!-- JS Connecting -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+
+
+
+
+</body>
+
+</html>

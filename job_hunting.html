@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career hub</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./job_hunting.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b7cae9d377.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="container nav_container">
+            <a href="homepage.html">
+                <img src="./imgs/logo_careerhub.png" width="120px" height="120px" id="logo" alt="logo image" style="margin-left: 1px ;"/>
+            </a>
+            <div class="nav_menu">
+                <a href="homepage.html#jobsearch">Job Search</a>
+                <a href="homepage.html#advancedjobsearch">Advance Job Search</a>
+                <a href="./career_advice.html">Career Advice</a>
+                <a href="./contact_us.html">Contact Us </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Profile
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./sign_up.html">Sign in</a>
+                        <a href="./sign_up.html">Register</a>
+                        <a href="./skill_profile.html">Skill Profile </a>
+                        <!-- <a href="./my_account.html">My Account </a> -->
+                  
+                        <a href="./sign_up.html">Logout </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav_btn" id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button class="nav_btn" id="close-menu-btn"><i class="fas fa-times"></i></button>
+
+
+    </nav>
+
+    <!-- header section -->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Your Dream Job is waiting. </h1>
+                <p>
+                    Finding a job that fits your talents in the evolving and competitive job market can be a challenging
+                    endeavour. CareerHub is a cutting-edge job-finding platform that seeks to revolutionise how people
+                    connect with their ideal employment. CareerHub was developed to assist with the issues encountered
+                    by both businesses and job seekers.
+
+                </p>
+
+            </div>
+            <div class="header_right">
+                <div class="header_right_image">
+                    <img src="./imgs/header.jpg">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+     <!-- <explore slider -->
+        <section class="container explore_container mySwiper">
+        
+            <div class="swiper-wrapper">
+                <article class="explorer swiper-slide">
+                    <div class="avatar">
+                        <img src="./imgs/wfh.jpg">
+                    </div>
+        
+                    <div class="explorer_info">
+                        <h2>The best way to ask about hybrid working in an interview </h2>
+                        <p> Not sure how to ask about hybrid working in your next interview? Here's how to go about it.</p>
+                        <button class="read"> 3.5 min read</button>
+        
+                    </div>
+        
+        
+                </article>
+
+                <article class="explorer swiper-slide">
+                    <div class="avatar">
+                        <img src="./imgs/coverletter.jpg">
+                    </div>
+        
+                    <div class="explorer_info">
+                        <h2>7 cover letter openers to land you an interview</h2>
+                        <p> Struggling with writing a cover letter? Here’s how to start strong to score that interview.</p>
+                        <button class="read"> 3.5 min read</button>
+        
+                    </div>
+     
+                </article>
+
+                <article class="explorer swiper-slide">
+                    <div class="avatar">
+                        <img src="./imgs/cv2.jpg">
+                    </div>
+        
+                    <div class="explorer_info">
+                        <h2>Free Resume Template</h2>
+                        <p> Craft a winning with SEEK's free resume template.</p>
+                        <button class="read">Template</button>
+        
+                    </div>  
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+
+        <!-- highlited cards -->
+     <section class="explore_cards">
+        <h1>Highlights of this section</h1>
+        <P>Don't miss our top resources and advice for career exploration.</P>
+        <div class="container explorer_container">
+
+            <article class="expolre">
+                <div class="explore_image">
+                    <img src="./imgs/job.png">
+                </div>
+                <div class="explore_info">
+                    <h4>Find a right job</h4>
+        
+                </div>
+            </article>
+
+            <article class="expolre">
+                <div class="explore_image">
+                    <img src="./imgs/increase.png">
+                </div>
+                <div class="explore_info">
+                    <h4>Resumes</h4>
+        
+                </div>
+            </article>
+
+            <article class="expolre">
+                <div class="explore_image">
+                    <img src="./imgs/jobfind.png">
+                </div>
+                <div class="explore_info">
+                    <h4>Cover letters</h4>
+        
+                </div>
+            </article>
+
+            <article class="expolre">
+                <div class="explore_image">
+                    <img src="./imgs/working-employee.png">
+                </div>
+                <div class="explore_info">
+                    <h4>Practice interview tool </h4>
+        
+                </div>
+            </article>
+
+           
+            </article>
+
+        </div>
+
+
+    </section>
+    <!-- advice card -->
+
+    <section class="advice_cards">
+        <h2>Finding the job for you</h2>
+        
+        <div class="container cadvice_container">
+         
+            
+            <article class="advicec">
+                <div class="advice_image">
+                    <img src="./imgs/thinking.jpg">
+                </div>
+                <div class="advice_info">
+                    <h4>Find your purpose: 5 careers for community-minded people
+                    </h4>
+                    <p>8 min read</p>
+                    <a href="course.html" class="btn btn-advice">Learn More</a>
+                </div>
+            </article>
+
+            <article class="advicec">
+                <div class="advice_image">
+                    <img src="./imgs/communication.jpg">
+                </div>
+                <div class="advice_info">
+                    <h4>What are people looking for on SEEK? Top search terms revealed
+                    </h4>
+                    <p>8 min read</p>
+                    <a href="course.html" class="btn btn-advice">Learn More</a>
+                </div>
+            </article>
+
+            <article class="advicec">
+                <div class="advice_image">
+                    <img src="./imgs/interviewface.jpg">
+                </div>
+                <div class="advice_info">
+                    <h4>6 signs you should rethink that job offer</h4>
+                    <p>6 min read</p>
+                    <a href="course.html" class="btn btn-advice">Learn More</a>
+                </div>
+            </article>
+
+            <article class="advicec">
+                <div class="advice_image">
+                    <img src="./imgs/softskills.jpg">
+                </div>
+                <div class="advice_info">
+                    <h4>5 tips to set career goals you can actually achieve
+                    </h4>
+                    <p>8 min read</p>
+                    <a href="course.html" class="btn btn-advice">Learn More</a>
+                </div>
+            </article>
+           
+        </div>
+    </section>
+    <!-- find job -->
+
+    <section class="find_job">
+        <h2>Find the right Job</h2>
+        <div class="container job_container">
+
+            <div class="div_left">
+                <p>Learn what you neet to know about a career, from salary to job satisfaction</p>
+                <button class="btn_learn">Select a role you are interested in</button>
+            </div>
+        
+           
+        
+            <div class="div_right">
+                <div class="div_right_image">
+                    <img src="./imgs/workingmen.png">
+                </div>
+            </div>
+
+      
+
+        </div>
+    </section>
+
+    <!-- applying for job -->
+
+    
+
+
+         <!-- JS Connecting -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+      <!-- swiper script -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 280,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            //responsive width is >=600px
+            breakpoints: {
+                100: {
+                    slidesPerView: 1
+                }
+            }
+        });
+
+    </script>
+
+    
+<script>
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100)
+    });
+
+</script>
+
+ <!-- footer -->
+
+ <footer class="footer">
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo">
+                <h4>Career Hub</h4>
+            </a>
+            <p>CareerHub is a cutting-edge job-finding platform that seeks to revolutionise how people connect with
+                their ideal employment. CareerHub was developed to assist with the issues encountered by both
+                businesses and job seekers.</p>
+        </div>
+
+        <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html#jobsearch">Job Search</a></li>
+                <li><a href="homepage.html#advancedjobsearch">Advnced Job Search</a></li>
+                <li><a href="./career_advice.html">Career Advice</a></li>
+            </ul>
+
+            <a href="homepage.html#jobsearch">Job Search</a>
+                <a href="homepage.html#advancedjobsearch">Advance Job Search</a>
+                <a href="./career_advice.html">Career Advice</a>
+                <a href="./contact_us.html">Contact Us </a>
+        </div>
+
+        <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Tearms & Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+61 451 561 707</p>
+                <p>helpatcareerhub@gmail.com</p>
+            </div>
+
+            <ul class="footer_social">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="footer_copyright">
+        <small>Copyright &copy; Career Hub</small>
+    </div>
+
+</footer>
+<script>
+    //nav button show/hide
+
+    const menu = document.querySelector(".nav_menu");
+    const menuBtn = document.querySelector("#open-menu-btn");
+    const closeBtn = document.querySelector("#close-menu-btn");
+
+    menuBtn.addEventListener('click', () => {
+        menu.style.display = "flex";
+        closeBtn.style.display = "inline-block";
+        menuBtn.style.display = "none";
+    })
+
+
+    //close nav menu
+
+    const closeNav = () => {
+        menu.style.display = "none";
+        closeBtn.style.display = "none";
+        menuBtn.style.display = "inline-block";
+    }
+
+    closeBtn.addEventListener("click", closeNav)
+
+
+</script>
+
+
+
+
+<!-- JS Connecting -->
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- swiper script -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 290,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        //responsive width is >=600px
+        breakpoints: {
+            600: {
+                slidesPerView: 1
+            }
+        }
+    });
+
+</script>
+
+
+<script>
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100)
+    });
+
+</script>
+
+
+
+
+
+</body>

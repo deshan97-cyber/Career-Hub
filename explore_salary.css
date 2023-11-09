@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000000;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --color-primary: #A31FBD;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #ff2626;
+    --color-danger-varient: #6c63ff;
+    --color-white: #fff;
+    --color-light: rgb(243, 243, 243);
+    --color-black: #000;
+    --color-bg: #ffffff;
+    --color-bg1: #799FF2;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+
+    --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --msger-bg: #fff;
+    --border: 2px solid #ddd;
+    --left-msg-bg: #ececec;
+    --right-msg-bg: #579ffb;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-white);
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+
+}
+
+section {
+
+    padding: 96px 0;
+
+}
+
+section h2 {
+
+    margin-bottom: 64px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 16px 32px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-bg2);
+    border-color: var(--color-bg2);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/* input{
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 16px 40px;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+
+} */
+
+
+.btn_search {
+
+    background: #ff2626;
+    color: var(--color-white);
+    padding: 16px 40px;
+    border-radius: 5px;
+    transition: var(--transition);
+    height: 55px;
+    width: 160px;
+
+}
+
+.btn_search:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+    border-color: var(--color-black);
+
+}
+
+.btn_seemore {
+
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 16px 32px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    /* display: inline-block;
+    border: 1px solid var(--color-black);
+    transition: var(--transition);
+    padding: 16px 30px;
+    border-radius: 5px; */
+}
+
+.btn_seemore:hover {
+
+    border-color: var(--color-black);
+}
+
+
+/* nav */
+
+nav {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* js nav bar change */
+.window-scroll {
+    background: var(--color-light);
+    box-shadow: 0 10px 32px rgb(125, 125, 125);
+
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.nav_btn {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    margin-left: 400px;
+}
+
+.nav_menu a {
+    font-size: 15px;
+
+}
+
+.nav_menu a:hover {
+    color: var(--color-danger);
+    transition: var(--transition);
+
+}
+
+.dropdown {
+    float: left;
+
+}
+
+.dropbtn {
+    font-size: 16px;
+    color: var(--color-black);
+    padding: 14px 16px;
+    transition: var(--transition);
+    background-color: transparent;
+
+
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+    color: var(--color-danger);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: var(--transition);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    height: 100%;
+
+}
+
+.header_left p {
+    margin: 16px 0 40px;
+}
+
+
+/* explore slide */
+
+
+.explore_container{
+
+    position: relative;
+    margin-bottom: 80px;
+    z-index: 0;    
+
+    
+}
+
+.explorer{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,2.5fr);
+    margin-top: -50spx;
+   
+}
+
+.avatar{
+
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 20px;
+   
+    
+}
+
+.explorer_info{
+   text-align: left;
+   margin-top: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
+
+}
+
+
+.read{
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+/* explore cards */
+
+
+.explore_cards h1{
+    margin-left: 200px;
+    margin-top: -190px;
+}
+
+.explore_cards p{
+    margin-left: 200px;
+}
+
+.explore_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+    margin-left: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.expolre{
+    background: var(--color-light);
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.explore_image{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.expolre:hover{
+    background: transparent;
+    text-align: center;
+    transition: var(--transition);
+    scale: 1.03;
+    overflow: hidden;
+}
+.explore_info{
+    margin-bottom: 10px;
+
+}
+
+.explore_info h4{
+    text-align: center;
+    margin-left: 10px;
+}
+.explore_info p{
+    text-align: left;
+}
+
+
+/* compare salary */
+.compare{
+    margin-top: -100px;
+    background-color: var(--color-bg2);
+    
+}
+.salary_container{
+    margin-top: -80px;
+
+   
+}
+.salary_container h2 {
+    color: var(--color-white);
+}
+
+.salary_container h4 {
+    color: var(--color-white);
+}
+
+.salary_container p{
+    margin-top: -50px;
+    color: var(--color-white);
+   
+}
+
+.search_grid{
+   display: grid;
+   grid-template-columns: repeat(2,2fr);
+   margin-top: 20px;
+   margin-left: 100px;
+
+    
+}
+.btn_comp{
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: var(--color-danger);
+    color: white;
+    padding: 16px 40px;
+    transition: var(--transition);
+}
+
+.btn_comp:hover{
+    background-color: var(--color-white);
+    color: #000;
+}
+
+.salary{
+    background-color: white;
+    height: 55px;
+    width: 400px;
+    font-size: large;
+    padding: 16px;
+    
+
+}
+/* high salary cards */
+.high_salary h1{
+    margin-left: 200px;
+}
+.high_salary p{
+    text-align: center;
+}
+
+
+/* advice cards */
+
+
+.advice_cards{
+    margin-top: -80px;
+    background-color: var(--color-bg2);
+
+}
+.advice_cards h2{
+    margin-left: 200px;
+}
+
+
+.cadvice_container{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 32px;
+   
+}
+
+.advicec{
+    background: var(--color-light);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.advice_image{
+    overflow: hidden;
+}
+.advicec:hover{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid var(--color-bg1);
+    transition: var(--transition);
+    scale: 1.03;
+}
+
+.advice_info{
+    padding: 32px;
+}
+
+.advice_info p{
+    margin: 20px 0 32px;
+    font-size: 14px;
+}

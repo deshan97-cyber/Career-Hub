@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "career hub",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
